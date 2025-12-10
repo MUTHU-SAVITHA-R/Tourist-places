@@ -5,38 +5,38 @@ function Places(props) {
     const stars = "⭐".repeat(props.rating);
     const styles = {
         card: {
-           
+
             margin: "100px",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            background: "linear-gradient(135deg, #A6D3FF, #0A2A43)", 
-            color: "white",              
+            background: "linear-gradient(135deg, #A6D3FF, #0A2A43)",
+            color: "white",
             borderRadius: "10px",
             padding: "15px",
-           
+
         },
         leftside: {
             width: "70%",
-           
-            display:"flex",
-            justifyContent:"space-around"
+
+            display: "flex",
+            justifyContent: "space-around"
         },
         rightside: {
             width: "250px"
         },
-         
+
         images: {
-    width: "50%",
-    height: "250px",     
-    objectFit: "cover",  
-    borderRadius: "10px"
-}
+            width: "50%",
+            height: "250px",
+            objectFit: "cover",
+
+        }
 
 
     }
     return (
-        
+
         <div style={styles.card}>
             <div style={styles.leftside}>
                 <img style={styles.images} src={props.image} />
