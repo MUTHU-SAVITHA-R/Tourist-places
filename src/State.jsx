@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Places from "./places";
+import Places from "./Places";
 import coorgb from "./assets/coorgb.jpg"; 
 import coorgb2 from "./assets/coorgb2.jpg"; 
 import lalbaghb from "./assets/lalbaghb.webp"; 

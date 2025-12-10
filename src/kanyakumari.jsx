@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Places from "./places";
+import Places from "./Places";
 
 import thiru from "./assets/thiru.jpg";
 import thiru2 from "./assets/thiru2.jpg";

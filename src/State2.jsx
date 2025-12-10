@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Places from "./places";
+import Places from "./Places";
 
 import marina from "./assets/marina.avif";
 import marina2 from "./assets/marina2.jpg";
