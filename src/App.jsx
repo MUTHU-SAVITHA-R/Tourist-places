@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Homepage from "./Homepage";
 import State from "./State";
 import State2 from "./State2";
-import Kanyakumari from "./kanyakumari";
+import Kanyakumari from "./Kanyakumari";
 import Login from "./Login";
 import { useState } from "react";
 import Footer from "./Footer";
