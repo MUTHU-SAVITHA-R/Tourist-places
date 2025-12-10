@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Navbar";
-import Homepage from "./homepage";
-import State from "./state";
+import Homepage from "./Homepage";
+import State from "./State";
 import State2 from "./State2";
 import Kanyakumari from "./kanyakumari";
 import Login from "./Login";
