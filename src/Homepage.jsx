@@ -31,14 +31,18 @@ function Homepage() {
             cursor: "pointer"
         },
         img: {
-             borderRadius: "15px",
+            width: "90%",
+            maxWidth: "800px",
+            height: "auto",
+            borderRadius: "15px",
+            marginTop: "20px"
 
         }
     }
 
     return (
         <div style={styles.container}>
-            <h2 style={{color:"white",marginTop:"100px"}}>TravelMate</h2>
+            <h2 style={{ color: "white", marginTop: "100px" }}>TravelMate</h2>
 
             <div style={styles.div}>
                 <p style={styles.p} onClick={() => navigate("/bangalore")}>Bangalore</p>
