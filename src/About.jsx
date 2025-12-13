@@ -6,7 +6,7 @@ function About() {
       padding: "25px",
       background: "linear-gradient(135deg,#0A2A43,#013A63)",
       color: "white",
-      minHeight: "60vh",
+      minHeight: "auto",
       textAlign: "center"
     },
     heading: {
