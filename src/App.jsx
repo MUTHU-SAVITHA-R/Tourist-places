@@ -16,7 +16,7 @@ function App() {
 
   return (
     <Router>
-      <Navbar search={search} setSearch={setSearch} />
+      <Navbar search={search} setSearch={setSearch} setIsLoggedIn={setIsLoggedIn} />
 
       <Routes>
         <Route path="/" element={<Homepage />} />

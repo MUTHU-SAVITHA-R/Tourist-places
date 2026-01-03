@@ -73,9 +73,12 @@ function Navbar(props) {
         <div style={styles.leftGroup}>
           <h4 style={styles.h4} onClick={goHome}>Home </h4>
           <h4 style={styles.h4} onClick={scrollToAbout}>About</h4>
-          
+          {!props.setIsLoggedIn &&(
+            <>
           <button style={styles.button} onClick={gologin}>Login</button>
           <button style={styles.button}>Signup</button>
+          </>
+        )}
         </div>
 
 
