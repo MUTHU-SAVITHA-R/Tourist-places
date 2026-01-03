@@ -8,6 +8,7 @@ import Login from "./Login";
 import { useState } from "react";
 import Footer from "./Footer";
 import About from "./About";
+import "./responsive.css";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -18,8 +19,7 @@ function App() {
       <Navbar search={search} setSearch={setSearch} />
 
       <Routes>
-
-        <Route  path="/" element={<Homepage />} />
+        <Route path="/" element={<Homepage />} />
         <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
 
         <Route
@@ -34,15 +34,14 @@ function App() {
           path="/kanyakumari"
           element={isLoggedIn ? <Kanyakumari search={search} /> : <Navigate to="/login" />}
         />
-        <Route
-          path="/about" element={<About />} />
+        <Route path="/about" element={<About />} />
       </Routes>
+
       <div id="about">
         <About />
       </div>
 
       <Footer />
-
     </Router>
   );
 }

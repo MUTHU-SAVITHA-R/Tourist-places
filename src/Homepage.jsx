@@ -1,58 +1,48 @@
 import { useNavigate } from "react-router-dom";
-import tour from './assets/tour.jpg';
+import tour from "./assets/tour.jpg";
+import TouristExperience from "./TouristExperience";
 
 function Homepage() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    const styles = {
-        container: {
-            position: "relative",
-            textAlign: "center",
-            marginTop: "15px",
-            background: "linear-gradient(135deg, #013A63, #89CFF0)"
-        },
-        div: {
-            position: "ABSOLUTE",
-            bottom: "2vh",
-            left: "50%",
-            transform: "translateX(-50%)",
-            width: "90%",
-            maxWidth: "600px",
-            height: "60px",
-            background: "#0A2A43",
-            borderRadius: "15px",
-            display: "flex",
-            justifyContent: "space-around",
-            alignItems: "center",
-            padding: "8px"
-        },
-        p: {
-            color: "white",
-            cursor: "pointer"
-        },
-        img: {
-            width: "90%",
-            maxWidth: "800px",
-            height: "auto",
-            borderRadius: "15px",
-            marginTop: "20px"
-
-        }
+  const styles = {
+    container: {
+      textAlign: "center",
+      marginTop: "100px",
+      background: "linear-gradient(135deg, #013A63, #89CFF0)"
+    },
+    cityBar: {
+      background: "#0A2A43",
+      color: "white",
+      padding: "10px",
+      borderRadius: "15px",
+      display: "flex",
+      justifyContent: "space-around",
+      maxWidth: "600px",
+      margin: "20px auto"
+    },
+    img: {
+      width: "90%",
+      maxWidth: "800px",
+      borderRadius: "15px"
     }
+  };
 
-    return (
-        <div style={styles.container}>
-            <h2 style={{ color: "white", marginTop: "100px" }}>TravelMate</h2>
+  return (
+    <div style={styles.container}>
+      <h2 style={{ color: "white" }}>TravelMate</h2>
 
-            <div style={styles.div}>
-                <p style={styles.p} onClick={() => navigate("/bangalore")}>Bangalore</p>
-                <p style={styles.p} onClick={() => navigate("/chennai")}>Chennai</p>
-                <p style={styles.p} onClick={() => navigate("/kanyakumari")}>Kanyakumari</p>
-            </div>
+      <div style={styles.cityBar}>
+        <p onClick={() => navigate("/bangalore")}>Bangalore</p>
+        <p onClick={() => navigate("/chennai")}>Chennai</p>
+        <p onClick={() => navigate("/kanyakumari")}>Kanyakumari</p>
+      </div>
 
-            <img style={styles.img} src={tour} alt="" />
-        </div>
-    );
+      <img style={styles.img} src={tour} alt="tour" />
+
+      <TouristExperience />
+    </div>
+  );
 }
 
 export default Homepage;

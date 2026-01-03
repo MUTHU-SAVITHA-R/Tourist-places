@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav input {
+    width: 90% !important;
+  }
+
+  .place-card {
+    flex-direction: column !important;
+    margin: 30px !important;
+  }
+
+  .place-images {
+    flex-direction: column;
+    width: 100% !important;
+  }
+
+  .place-images img {
+    width: 100% !important;
+    height: 200px !important;
+  }
+
+  .place-info {
+    width: 100% !important;
+    text-align: center;
+  }
+}
