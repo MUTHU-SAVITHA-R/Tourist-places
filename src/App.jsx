@@ -9,7 +9,7 @@ import { useState } from "react";
 import Footer from "./Footer";
 import About from "./About";
 import "./responsive.css";
-import Signup from "./signup";
+import Signup from "./Signup";
 import { useEffect } from "react";
 
 function App() {
