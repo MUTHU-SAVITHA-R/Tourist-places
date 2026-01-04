@@ -57,9 +57,19 @@ function Navbar(props) {
      navigate("/login");
      window.scrollTo({ top: 0, behavior: "smooth" });
   }
+  function goSignup(){
+    navigate("/signup");
+     window.scrollTo({ top: 0, behavior: "smooth" });
+  }
   
   function handlesearch(event) {
     props.setSearch(event.target.value)
+  }
+   function handleLogout() {
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("userEmail");
+    navigate("/login");
+    window.location.reload(); // ensures state reset
   }
   return (
     <>
@@ -73,12 +83,13 @@ function Navbar(props) {
         <div style={styles.leftGroup}>
           <h4 style={styles.h4} onClick={goHome}>Home </h4>
           <h4 style={styles.h4} onClick={scrollToAbout}>About</h4>
-          {!props.isLoggedIn &&(
+          {props.isLoggedIn ? (<button style={styles.button} onClick={handleLogout}>Logout</button>
+      ) :(
             <>
           <button style={styles.button} onClick={gologin}>Login</button>
-          <button style={styles.button}>Signup</button>
-          </>
-        )}
+          <button style={styles.button} onClick={goSignup}>Signup</button>
+          </>)
+        }
         </div>
 
 

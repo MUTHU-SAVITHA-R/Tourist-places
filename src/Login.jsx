@@ -7,17 +7,22 @@ function Login({ setIsLoggedIn }) {
   const navigate = useNavigate();
 
  
-  const validEmail = "savitha@gmail.com";
-  const validPassword = "12345";
-
+  
   function handleLogin(e) {
     e.preventDefault();
 
-    if (email === validEmail && password === validPassword) {
+    const users=JSON.parse(localStorage.getItem("users"))||[];
+    
+    const matcheduser=users.find(user=>user.email===email && user.password===password );
+    if(matcheduser){
+      localStorage.setItem("isLoggedIn", "true");
+      localStorage.setItem("userEmail", email);
       setIsLoggedIn(true);
-      navigate("/");
-    } else {
-      alert("Invalid Credentials!");
+         navigate("/");
+          
+    }
+    else{
+        alert("Invalid credentials");
     }
   }
 
