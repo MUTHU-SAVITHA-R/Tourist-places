@@ -3,15 +3,13 @@ function About() {
 
   const styles = {
     container: {
-      marginTop: "80px",
       padding: isMobile ? "20px" : "40px",
       background: "linear-gradient(135deg, #0A2A43, #013A63)",
       color: "#F0F8FF",
       textAlign: "center",
       borderRadius: "20px",
       maxWidth: "1000px",
-      marginLeft: "auto",
-      marginRight: "auto",
+      margin: "auto",
       boxShadow: "0 8px 20px rgba(0,0,0,0.4)"
     },
     heading: {
@@ -46,36 +44,15 @@ function About() {
 
       <p style={styles.text}>
         TravelMate is a user-friendly travel discovery platform designed to help explorers
-        find the best tourist destinations with accurate details like location, distance,
-        rating, highlights, and images.
+        find the best tourist destinations.
       </p>
 
       <h2 style={styles.subHeading}>Our Vision</h2>
       <p style={styles.text}>
-        To simplify travel planning and guide users with authentic information so they can
-        explore new places with confidence and excitement.
+        To simplify travel planning and guide users with authentic information.
       </p>
 
-      <h2 style={styles.subHeading}>What We Offer</h2>
-      <p style={styles.text}>
-        • Tourist attraction details<br/>
-        • Distance from major cities<br/>
-        • Clean UI with images & ratings<br/>
-        • Travel guide experience<br/>
-        • Easy navigation
-      </p>
-
-      <h2 style={styles.subHeading}>Why TravelMate?</h2>
-      <p style={styles.text}>
-        • Easy to use<br/>
-        • Accurate travel information<br/>
-        • Saves time<br/>
-        • Modern user interface
-      </p>
-
-      <p style={styles.motto}>
-        “Discover. Explore. Experience.”
-      </p>
+      <p style={styles.motto}>“Discover. Explore. Experience.”</p>
     </div>
   );
 }

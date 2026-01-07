@@ -39,6 +39,7 @@ function Homepage() {
         <p onClick={() => navigate("/chennai")}>Chennai</p>
         <p onClick={() => navigate("/kanyakumari")}>Kanyakumari</p>
       </div>
+      
 
       <img style={styles.img} src={tour} alt="tour" />
 

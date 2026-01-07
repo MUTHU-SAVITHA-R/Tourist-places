@@ -19,34 +19,26 @@ function App() {
     if (storedLogin === "true") setIsLoggedIn(true);
   }, []);
 
-  const NAV_HEIGHT = 80; 
+  const NAV_HEIGHT = 80;
 
   return (
     <Router>
       <Navbar search={search} setSearch={setSearch} isLoggedIn={isLoggedIn} />
 
-     
       <div style={{ paddingTop: NAV_HEIGHT }}>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
           <Route path="/signup" element={<Signup setIsLoggedIn={setIsLoggedIn} />} />
-          <Route
-            path="/bangalore"
-            element={isLoggedIn ? <State search={search} /> : <Navigate to="/login" />}
-          />
-          <Route
-            path="/chennai"
-            element={isLoggedIn ? <State2 search={search} /> : <Navigate to="/login" />}
-          />
-          <Route
-            path="/kanyakumari"
-            element={isLoggedIn ? <Kanyakumari search={search} /> : <Navigate to="/login" />}
-          />
+          <Route path="/bangalore" element={isLoggedIn ? <State search={search} /> : <Navigate to="/login" />} />
+          <Route path="/chennai" element={isLoggedIn ? <State2 search={search} /> : <Navigate to="/login" />} />
+          <Route path="/kanyakumari" element={isLoggedIn ? <Kanyakumari search={search} /> : <Navigate to="/login" />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
-
+      <div id="about">
+        <About />
+      </div>
       <Footer />
     </Router>
   );
