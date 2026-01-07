@@ -1,29 +1,45 @@
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
+    gap: 10px;
   }
 
   nav input {
     width: 90% !important;
+    margin: 10px 0;
   }
 
   .place-card {
     flex-direction: column !important;
-    margin: 30px !important;
+    align-items: center;
+    margin: 20px 10px !important;
+    padding: 15px !important;
   }
 
   .place-images {
+    display: flex;
     flex-direction: column;
+    gap: 10px;
     width: 100% !important;
   }
 
   .place-images img {
     width: 100% !important;
     height: 200px !important;
+    border-radius: 12px;
+    object-fit: cover;
   }
 
-  .place-info {
-    width: 100% !important;
+  .place-card h3 {
     text-align: center;
+    margin: 15px 0 10px 0;
+    font-size: 20px;
+  }
+
+  .place-card button {
+    width: 80%;
+    margin: 10px 0;
+    padding: 12px 0;
+    font-size: 16px;
   }
 }

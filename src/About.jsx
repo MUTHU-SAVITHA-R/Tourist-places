@@ -1,37 +1,42 @@
 function About() {
-
   const isMobile = window.innerWidth <= 768;
 
   const styles = {
     container: {
-      marginTop: "50px",
-      padding: isMobile ? "15px" : "25px",
-      background: "linear-gradient(135deg,#0A2A43,#013A63)",
-      color: "white",
-      textAlign: "center"
+      marginTop: "80px",
+      padding: isMobile ? "20px" : "40px",
+      background: "linear-gradient(135deg, #0A2A43, #013A63)",
+      color: "#F0F8FF",
+      textAlign: "center",
+      borderRadius: "20px",
+      maxWidth: "1000px",
+      marginLeft: "auto",
+      marginRight: "auto",
+      boxShadow: "0 8px 20px rgba(0,0,0,0.4)"
     },
     heading: {
-      fontSize: isMobile ? "24px" : "32px",
-      marginBottom: "12px",
-      color: "#89CFF0"
+      fontSize: isMobile ? "28px" : "36px",
+      marginBottom: "15px",
+      color: "#89CFF0",
+      fontWeight: "700"
     },
     subHeading: {
-      fontSize: isMobile ? "18px" : "22px",
-      marginTop: "16px",
-      marginBottom: "8px",
+      fontSize: isMobile ? "20px" : "26px",
+      marginTop: "20px",
+      marginBottom: "10px",
       color: "#ADD8E6"
     },
     text: {
-      fontSize: isMobile ? "15px" : "18px",
-      margin: "8px auto",
+      fontSize: isMobile ? "16px" : "18px",
+      margin: "10px auto",
       maxWidth: "850px",
-      lineHeight: "1.5"
+      lineHeight: "1.6"
     },
     motto: {
-      fontSize: isMobile ? "16px" : "20px",
-      marginTop: "15px",
+      fontSize: isMobile ? "18px" : "22px",
+      marginTop: "25px",
       fontStyle: "italic",
-      color: "#89CFF0"
+      color: "#FFD700"
     }
   };
 
@@ -42,7 +47,7 @@ function About() {
       <p style={styles.text}>
         TravelMate is a user-friendly travel discovery platform designed to help explorers
         find the best tourist destinations with accurate details like location, distance,
-        rating, highlights and images.
+        rating, highlights, and images.
       </p>
 
       <h2 style={styles.subHeading}>Our Vision</h2>
