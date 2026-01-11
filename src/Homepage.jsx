@@ -50,18 +50,21 @@ function Homepage() {
         <p style={{
           padding: "8px 18px",
           background: "#013A63",
-          borderRadius: "20px"
-        }}>Bangalore</p>
+          borderRadius: "20px",
+          cursor:"pointer",
+        }} onClick={() => navigate("/bangalore")}>Bangalore</p>
          <p style={{
           padding: "8px 18px",
           background: "#013A63",
-          borderRadius: "20px"
-        }}>Chennai</p>
+          borderRadius: "20px",
+          cursor:"pointer",
+        }} onClick={() => navigate("/chennai")}>Chennai</p>
          <p style={{
           padding: "8px 18px",
           background: "#013A63",
-          borderRadius: "20px"
-        }}>Kanyakumari</p>
+          borderRadius: "20px",
+          cursor:"pointer",
+        }} onClick={() => navigate("/kanyakumari")}>Kanyakumari</p>
       </div>
 
 
