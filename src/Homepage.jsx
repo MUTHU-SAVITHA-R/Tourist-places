@@ -10,7 +10,7 @@ function Homepage() {
       textAlign: "center",
       marginTop: "80px",
       background: "linear-gradient(135deg, #013A63, #89CFF0)",
-      minHeight: "100vh",
+      minHeight: "auto",
       overflowX: "hidden",
       paddingBottom: "40px"
     },
