@@ -25,11 +25,15 @@ function Homepage() {
       margin: "20px auto",
       cursor: "pointer"
     },
+
     img: {
       width: "90%",
       maxWidth: "800px",
-      borderRadius: "15px"
+      borderRadius: "15px",
+      marginTop: "20px",
+      height: "auto"
     }
+
   };
 
   return (
