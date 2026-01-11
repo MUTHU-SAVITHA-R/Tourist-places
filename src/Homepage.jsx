@@ -8,31 +8,38 @@ function Homepage() {
   const styles = {
     container: {
       textAlign: "center",
-      marginTop: "0px",
+      marginTop: "80px",  
       background: "linear-gradient(135deg, #013A63, #89CFF0)",
       minHeight: "100vh",
       overflowX: "hidden",
       paddingBottom: "40px"
     },
+
     cityBar: {
+
       background: "#0A2A43",
       color: "white",
       padding: "10px",
       borderRadius: "15px",
       display: "flex",
-      justifyContent: "space-around",
-      maxWidth: "600px",
+      flexWrap: "wrap",
+      justifyContent: "center",
+      gap: "15px",
+      maxWidth: "90%",
       margin: "20px auto",
       cursor: "pointer"
-    },
 
+
+    },
     img: {
       width: "90%",
       maxWidth: "800px",
       borderRadius: "15px",
       marginTop: "20px",
-      height: "auto"
+      maxHeight: "300px",
+      objectFit: "cover"
     }
+
 
   };
 

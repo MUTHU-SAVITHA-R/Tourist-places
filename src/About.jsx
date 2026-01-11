@@ -2,16 +2,17 @@ function About() {
   const isMobile = window.innerWidth <= 768;
 
   const styles = {
-    container: {
-      padding: isMobile ? "20px" : "40px",
-      background: "linear-gradient(135deg, #0A2A43, #013A63)",
-      color: "#F0F8FF",
-      textAlign: "center",
-      borderRadius: "20px",
-      maxWidth: "1000px",
-      margin: "auto",
-      boxShadow: "0 8px 20px rgba(0,0,0,0.4)"
-    },
+   container: {
+  padding: isMobile ? "20px" : "40px",
+  background: "linear-gradient(135deg, #0A2A43, #013A63)",
+  color: "#F0F8FF",
+  textAlign: "center",
+  borderRadius: "20px",
+  maxWidth: "1000px",
+  margin: "20px auto",   
+  boxShadow: "0 8px 20px rgba(0,0,0,0.4)",
+  width: "90%"          
+},
     heading: {
       fontSize: isMobile ? "28px" : "36px",
       marginBottom: "15px",

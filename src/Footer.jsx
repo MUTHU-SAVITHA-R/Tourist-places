@@ -3,10 +3,10 @@ function Footer() {
   const styles = {
     footer: {
       background: "linear-gradient(135deg, #031C2E, #0A2A43)",
-      padding: "20px 0",
+      padding: "20px 10px",
       textAlign: "center",
       color: "white",
-      marginTop: "50px",
+      marginTop: "30px",
       borderTop: "2px solid #89CFF0"
     },
     title: {
