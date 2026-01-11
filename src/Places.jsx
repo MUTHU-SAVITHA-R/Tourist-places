@@ -3,45 +3,42 @@ import { useState } from "react";
 function Places({ place, location, distance, rating, description, image, image2 }) {
   const [showModal, setShowModal] = useState(false);
   const stars = "⭐".repeat(rating);
-
+  const isMobile = window.innerWidth <= 768;
   const styles = {
     card: {
-      display: "flex",
-      flexWrap: "wrap",
-      justifyContent: "space-between",
-      background: "#0A2A43",
-      color: "white",
-      borderRadius: "15px",
-      padding: "20px",
-      margin: "40px auto",
-      maxWidth: "1000px",
-      boxShadow: "0 8px 20px rgba(0,0,0,0.4)",
-      cursor: "pointer",
-      transition: "transform 0.3s",
-      alignItems: "center"
-    },
-    leftSide: {
-      display: "flex",
-      flex: "1 1 60%",
-      gap: "10px",
-      flexWrap: "wrap",
-      justifyContent: "center"
-    },
-    rightSide: {
-      flex: "1 1 35%",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      textAlign: "center",
-      gap: "15px"
-    },
-    images: {
-      width: "48%",
-      height: "250px",
-      borderRadius: "12px",
-      objectFit: "cover"
-    },
+  display: "flex",
+  flexDirection: isMobile ? "column" : "row",
+  background: "#0A2A43",
+  color: "white",
+  borderRadius: "15px",
+  padding: "15px",
+  margin: "20px auto",
+  maxWidth: "1000px",
+  boxShadow: "0 8px 20px rgba(0,0,0,0.4)",
+  alignItems: "center",
+  gap: "15px"
+},
+
+leftSide: {
+  display: "flex",
+  width: "100%",
+  flexDirection: isMobile ? "column" : "row",
+  gap: "10px",
+  justifyContent: "center"
+},
+
+images: {
+  width: isMobile ? "100%" : "48%",
+  height: "220px",
+  borderRadius: "12px",
+  objectFit: "cover"
+},
+
+rightSide: {
+  width: "100%",
+  textAlign: "center"
+},
+
     button: {
       padding: "10px 25px",
       borderRadius: "25px",

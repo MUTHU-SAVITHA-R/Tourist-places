@@ -8,7 +8,7 @@ function Homepage() {
   const styles = {
     container: {
       textAlign: "center",
-      marginTop: "80px",  
+      marginTop: "80px",
       background: "linear-gradient(135deg, #013A63, #89CFF0)",
       minHeight: "100vh",
       overflowX: "hidden",
@@ -16,7 +16,6 @@ function Homepage() {
     },
 
     cityBar: {
-
       background: "#0A2A43",
       color: "white",
       padding: "10px",
@@ -24,13 +23,13 @@ function Homepage() {
       display: "flex",
       flexWrap: "wrap",
       justifyContent: "center",
-      gap: "15px",
+      gap: "20px",
+      width: "fit-content",
       maxWidth: "90%",
       margin: "20px auto",
       cursor: "pointer"
-
-
     },
+
     img: {
       width: "90%",
       maxWidth: "800px",
@@ -48,9 +47,21 @@ function Homepage() {
       <h2 style={{ color: "white", marginTop: "20px" }}>TravelMate</h2>
 
       <div style={styles.cityBar}>
-        <p onClick={() => navigate("/bangalore")}>Bangalore</p>
-        <p onClick={() => navigate("/chennai")}>Chennai</p>
-        <p onClick={() => navigate("/kanyakumari")}>Kanyakumari</p>
+        <p style={{
+          padding: "8px 18px",
+          background: "#013A63",
+          borderRadius: "20px"
+        }}>Bangalore</p>
+         <p style={{
+          padding: "8px 18px",
+          background: "#013A63",
+          borderRadius: "20px"
+        }}>Chennai</p>
+         <p style={{
+          padding: "8px 18px",
+          background: "#013A63",
+          borderRadius: "20px"
+        }}>Kanyakumari</p>
       </div>
 
 
