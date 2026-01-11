@@ -1,9 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import Homepage from "./Homepage";
-import State from "./State";
-import State2 from "./State2";
-import Kanyakumari from "./kanyakumari";
+import City from "./City";
 import Login from "./Login";
 import Signup from "./Signup";
 import About from "./About";
@@ -30,14 +28,17 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
           <Route path="/signup" element={<Signup setIsLoggedIn={setIsLoggedIn} />} />
-          <Route path="/bangalore" element={isLoggedIn ? <State search={search} /> : <Navigate to="/login" />} />
-          <Route path="/chennai" element={isLoggedIn ? <State2 search={search} /> : <Navigate to="/login" />} />
-          <Route path="/kanyakumari" element={isLoggedIn ? <Kanyakumari search={search} /> : <Navigate to="/login" />} />
+
+          <Route
+            path="/city/:cityId"
+            element={isLoggedIn ? <City search={search} /> : <Navigate to="/login" />}
+          />
+
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
       <div id="about">
-        <About />
+        <About/>
       </div>
       <Footer />
     </Router>

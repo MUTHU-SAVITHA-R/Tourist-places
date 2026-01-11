@@ -52,19 +52,19 @@ function Homepage() {
           background: "#013A63",
           borderRadius: "20px",
           cursor:"pointer",
-        }} onClick={() => navigate("/bangalore")}>Bangalore</p>
+        }} onClick={() => navigate("/city/bangalore")}>Bangalore</p>
          <p style={{
           padding: "8px 18px",
           background: "#013A63",
           borderRadius: "20px",
           cursor:"pointer",
-        }} onClick={() => navigate("/chennai")}>Chennai</p>
+        }} onClick={() => navigate("/city/chennai")}>Chennai</p>
          <p style={{
           padding: "8px 18px",
           background: "#013A63",
           borderRadius: "20px",
           cursor:"pointer",
-        }} onClick={() => navigate("/kanyakumari")}>Kanyakumari</p>
+        }} onClick={() => navigate("/city/kanyakumari")}>Kanyakumari</p>
       </div>
 
 
